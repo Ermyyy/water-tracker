@@ -1,4 +1,4 @@
-import { AppBar, Button, Container, IconButton, Toolbar, Typography } from "@mui/material"
+import { AppBar, Container, IconButton, Toolbar, Typography } from "@mui/material"
 import { useDispatch, useSelector } from "react-redux"
 import type { RootState } from "./app/store"
 import { toggleTheme } from "./features/ui/uiSlice"
