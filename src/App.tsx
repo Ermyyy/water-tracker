@@ -7,6 +7,7 @@ import { Brightness4, Brightness7, Settings } from "@mui/icons-material"
 import { Route, Routes, Link } from "react-router-dom"
 import Dashboard from "./pages/Dashboard"
 import AddWaterModal from "./components/AddWaterModal";
+import WaterShackbar from "./components/WaterSnackbar";
 
 
 function App() {
@@ -34,6 +35,7 @@ function App() {
         </Routes>
       </Container>
       <AddWaterModal/>
+      <WaterShackbar/>
     </>
   )
 }

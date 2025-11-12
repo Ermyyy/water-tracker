@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { openModal } from "../features/ui/uiSlice";
 import type { RootState } from "../app/store";
 import { addWater } from "../features/water/waterSlice";
+import WeeklyChart from "../components/WeeklyChart";
 
 export default function Dashboard() {
     const dispatch = useDispatch();
@@ -43,6 +44,7 @@ export default function Dashboard() {
             <Button variant="outlined" onClick={() => dispatch(openModal())}>
                 Ввести своё количество
             </Button>
+            <WeeklyChart/>
         </Container>
     )
 }
