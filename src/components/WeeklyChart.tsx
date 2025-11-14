@@ -20,6 +20,12 @@ export default function WeeklyChart() {
         }
     })
     return (
+        <motion.div
+        initial={{ opacity: 0, y: 25 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.15 }}
+        >
+
         <Paper sx={{ mt: 5, p: 2 }}>
             <Typography variant="h6" gutterBottom>
                 Статистика за неделю
@@ -42,8 +48,11 @@ export default function WeeklyChart() {
                 sx={{
                     mt: 6,
                     p: 1.5,
+                    minWidth: 300,
                     display: "inline-block",
                     borderRadius: 2,
+                    justifyContent: "center",
+                    alignItems: "center",
                     fontWeight: 600,
                     letterSpacing: 0.5,
                     color: "primary.main",
@@ -59,5 +68,6 @@ export default function WeeklyChart() {
                 </motion.div>
             </ResponsiveContainer>
         </Paper>
+    </motion.div>
     )
 }

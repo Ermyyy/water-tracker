@@ -10,7 +10,20 @@ export const lightTheme = createTheme({
     },
     typography: {
         fontFamily: "'Inter', sans-serif",
-    }
+    },
+    components: {
+        MuiButton: {
+            styleOverrides: {
+            root: {
+                borderRadius: "12px",
+                paddingTop: "10px",
+                paddingBottom: "10px",
+                transition: "0.2s",
+            },
+            },
+        },
+    },
+
 })
 
 export const DarkTheme = createTheme({
@@ -23,5 +36,18 @@ export const DarkTheme = createTheme({
     },
     typography: {
         fontFamily: "'Inter', sans-serif",
-    }
+    },
+    components: {
+        MuiButton: {
+            styleOverrides: {
+            root: {
+                borderRadius: "12px",
+                paddingTop: "10px",
+                paddingBottom: "10px",
+                transition: "0.2s",
+            },
+            },
+        },
+    },
+
 })
